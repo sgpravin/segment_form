@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+h1 {
+  color: #fff;
+  background-color: #39aebc;
+  padding: 10px;
+  margin: 0;
+}
+.saveSegment {
+  position: relative;
+  top: 0;
+  bottom: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.saveSegment > button {
+  padding: 10px;
+  background-color: transparent;
+  position: relative;
+  color: #000;
+  border-color: #000;
+  border-width: 3px;
+  border-style: double;
+  left: 100px;
+  top: 40px;
+}
+.popUp {
+  background-color: #fff;
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+  opacity: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: #7dd0bd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.save {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #7dd0bd;
 }
-
-.App-link {
-  color: #61dafb;
+select {
+  padding: 10px;
+  width: 70%;
+  margin: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span,
+label {
+  padding: 10px;
+}
+.segName {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+}
+.dots {
+  display: inline;
+  position: relative;
+  left: 50%;
+}
+.dot {
+  height: 0px;
+  width: 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotRed {
+  height: 0px;
+  width: 0px;
+  background-color: #fa4141;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotGreen {
+  height: 0px;
+  width: 0px;
+  background-color: #0e9901;
+  border-radius: 50%;
+  display: inline-block;
+}
+.delete {
+  padding: 10px;
+  width: 7%;
+  font-weight: 800;
+  background-color: #f2fbf9;
+  border: none;
+}
+.cancel {
+  padding: 10px;
+  position: absolute;
+  left: 150px;
+  bottom: 0;
+  color: #f84f4f;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+}
+ul {
+  list-style: none;
+  position: relative;
+  right: 40px;
+}
+ul select {
+  padding: 10px;
+  width: 76%;
+  margin: 10px;
 }
